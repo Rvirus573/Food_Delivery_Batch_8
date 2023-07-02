@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/ui/route/routes.dart';
-import 'package:food_delivery/ui/views/splash.dart';
+
 import 'package:get/get.dart';
 
-import 'ui/views/auth/login.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      
       title: 'Flutter Demo',
       theme: ThemeData(
         useMaterial3: true,

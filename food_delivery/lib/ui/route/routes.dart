@@ -15,6 +15,6 @@ List<GetPage> getpages = [
   GetPage(name: splash, page: () => const Splash()),
   GetPage(name: onboarding, page: () => const OnBoarding()),
   GetPage(name: home, page: () => const Home()),
-  GetPage(name: login, page: () => const Login()),
-  GetPage(name: signup, page: () => const Signup()),
+  GetPage(name: login, page: () => Login()),
+  GetPage(name: signup, page: () => Signup()),
 ];

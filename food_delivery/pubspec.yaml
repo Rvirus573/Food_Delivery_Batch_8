@@ -32,6 +32,9 @@ dependencies:
     sdk: flutter
   onboarding_intro_screen: ^0.0.8
   get: ^4.6.5
+  email_validator: ^2.1.17
+  image_picker: ^1.0.0
+  
 
 
   # The following adds the Cupertino Icons font to your application.
