@@ -2,10 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/ui/route/routes.dart';
 
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
 
+  Box box = await Hive.openBox('todo');
+  //Box boxTwo = await Hive.openBox('Contact');
 
-void main() {
+  box.put('name', 'reza');
+ // print(box.get('name'));
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -17,10 +27,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      
+
       title: 'Flutter Demo',
       theme: ThemeData(
-        useMaterial3: true,
+        // useMaterial3: true,
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the

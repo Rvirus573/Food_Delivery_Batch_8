@@ -16,5 +16,5 @@ List<GetPage> getpages = [
   GetPage(name: onboarding, page: () => const OnBoarding()),
   GetPage(name: home, page: () => const Home()),
   GetPage(name: login, page: () => Login()),
-  GetPage(name: signup, page: () => Signup()),
+  GetPage(name: signup, page: () => const Signup()),
 ];

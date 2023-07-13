@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/ui/route/routes.dart';
 import 'package:food_delivery/ui/views/auth/login.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 import 'package:onboarding_intro_screen/onboarding_screen.dart';
 
@@ -25,6 +26,8 @@ class _OnBoardingState extends State<OnBoarding> {
       body: OnBoardingScreen(
         onSkip: () {
           Get.toNamed(login);
+          final box = GetStorage();
+          box.write('value', true);
         },
         showPrevNextButton: true,
         showIndicator: true,
