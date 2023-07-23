@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/const/app_strings.dart';
 import 'package:food_delivery/ui/route/routes.dart';
 import 'package:food_delivery/ui/style/app_style.dart';
-import 'package:food_delivery/ui/views/onboarding.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
